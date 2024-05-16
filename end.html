@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <link rel="stylesheet" href="end.css">
+</head>
+<body> 
+    <h1>Completed</h1>
+   <div>
+    <span>Score:</span>
+    <span id="score"></span>
+   </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+        document.getElementById('score').innerText = score;
+    </script>
+</body>
+</html>
